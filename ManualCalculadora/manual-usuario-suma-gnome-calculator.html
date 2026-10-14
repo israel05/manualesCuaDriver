@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario — Función Suma en Calculadora de GNOME</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --heading: #000000;
+            --muted: #666666;
+            --border: #e0e0e0;
+            --code-bg: #f5f5f5;
+            --accent: #2563eb;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --text: #e0e0e0;
+                --heading: #ffffff;
+                --muted: #999999;
+                --border: #404040;
+                --code-bg: #2a2a2a;
+                --accent: #60a5fa;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--bg);
+        }
+        h1, h2, h3 {
+            color: var(--heading);
+            margin-top: 2rem;
+        }
+        h1 {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.3rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid var(--border);
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background: var(--code-bg);
+            font-weight: 600;
+        }
+        code {
+            background: var(--code-bg);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        pre {
+            background: var(--code-bg);
+            padding: 1rem;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            display: block;
+            margin: 1rem 0;
+        }
+        figcaption {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-top: -0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .toc {
+            background: var(--code-bg);
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0 2rem 0;
+        }
+        .toc ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .info-box {
+            background: var(--code-bg);
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Manual de Usuario — Función Suma en Calculadora de GNOME</h1>
+
+<table>
+    <tr><th>Campo</th><th>Valor</th></tr>
+    <tr><td><strong>Aplicación</strong></td><td>GNOME Calculator</td></tr>
+    <tr><td><strong>Versión</strong></td><td>50.0</td></tr>
+    <tr><td><strong>Sistema operativo</strong></td><td>Linux (GNOME)</td></tr>
+    <tr><td><strong>Módulo</strong></td><td>Suma (modo Básico)</td></tr>
+    <tr><td><strong>Fecha</strong></td><td>14 de octubre de 2026</td></tr>
+</table>
+
+<div class="toc">
+    <h3>Índice</h3>
+    <ul>
+        <li><a href="#1-propósito">1. Propósito</a></li>
+        <li><a href="#2-público-objetivo">2. Público objetivo</a></li>
+        <li><a href="#3-alcance">3. Alcance</a></li>
+        <li><a href="#4-requisitos">4. Requisitos</a></li>
+        <li><a href="#5-descripción-de-la-interfaz">5. Descripción de la interfaz</a></li>
+        <li><a href="#6-procedimiento-realizar-una-suma">6. Procedimiento: realizar una suma</a></li>
+        <li><a href="#7-ejemplo-completo">7. Ejemplo completo: 15 + 28 = 43</a></li>
+        <li><a href="#8-resolución-de-problemas">8. Resolución de problemas</a></li>
+        <li><a href="#9-notas-y-referencias">9. Notas y referencias</a></li>
+    </ul>
+</div>
+
+<h2 id="1-propósito">1. Propósito</h2>
+<p>Este manual explica paso a paso cómo utilizar la función de <strong>suma</strong> en la aplicación <strong>Calculadora de GNOME</strong> (versión 50.0), en su modo <strong>Básico</strong>. El objetivo es permitir a cualquier persona realizar sumas simples de dos o más números enteros o decimales.</p>
+
+<h2 id="2-público-objetivo">2. Público objetivo</h2>
+<p>Personas usuarias sin conocimientos técnicos avanzados que necesiten realizar operaciones aritméticas básicas en un entorno de escritorio GNOME.</p>
+
+<h2 id="3-alcance">3. Alcance</h2>
+<p>Este documento cubre exclusivamente la operación de <strong>suma</strong> en el <strong>modo Básico</strong> de la calculadora. No se incluyen otros modos (Scientific, Financial, Programming, Templates), otras operaciones (resta, multiplicación, división) ni funciones avanzadas.</p>
+
+<h2 id="4-requisitos">4. Requisitos</h2>
+<ul>
+    <li>Sistema operativo Linux con escritorio GNOME (o compatible).</li>
+    <li>Aplicación <strong>GNOME Calculator</strong> instalada (versión 50.0 verificada en este manual).</li>
+    <li>Permisos de Accessibilidad y Screen Recording para la herramienta de automatización utilizada durante la verificación.</li>
+</ul>
+
+<h3 id="41-cómo-abrir-la-calculadora">4.1. Cómo abrir la calculadora</h3>
+<p>La aplicación puede iniciarse de varias formas:</p>
+<ul>
+    <li><strong>Desde la terminal:</strong> ejecutar el comando <code>gnome-calculator</code>.</li>
+    <li><strong>Desde el menú de aplicaciones:</strong> buscar "Calculadora" o "Calculator" en el lanzador de aplicaciones de GNOME.</li>
+</ul>
+<div class="info-box">
+    <strong>Nota:</strong> Durante la verificación de este manual, la aplicación se lanzó desde la terminal con el comando <code>gnome-calculator &</code>.
+</div>
+
+<h2 id="5-descripción-de-la-interfaz">5. Descripción de la interfaz</h2>
+<p>Al abrir la calculadora en modo Básico, la interfaz presenta las siguientes zonas:</p>
+
+<h3 id="51-barra-superior">5.1. Barra superior</h3>
+<table>
+    <tr><th>Elemento</th><th>Descripción</th></tr>
+    <tr><td><strong>Icono de calculadora</strong></td><td>Identificador visual de la aplicación.</td></tr>
+    <tr><td><strong>Flechas Deshacer / Rehacer</strong></td><td>Permiten revertir o restaurar la última acción.</td></tr>
+    <tr><td><strong>Selector de modo</strong></td><td>Muestra el modo actual (ej. "Bás..." abreviatura de "Básico"). Permite cambiar entre modos.</td></tr>
+    <tr><td><strong>Menú principal</strong></td><td>Botón con tres líneas horizontales (icono hamburguesa). Accede a opciones adicionales de la aplicación.</td></tr>
+    <tr><td><strong>Controles de ventana</strong></td><td>Minimizar, Maximizar y Cerrar.</td></tr>
+</table>
+
+<h3 id="52-área-de-visualización">5.2. Área de visualización</h3>
+<table>
+    <tr><th>Elemento</th><th>Descripción</th></tr>
+    <tr><td><strong>Display principal</strong></td><td>Zona gris superior que muestra el resultado y el historial de la operación.</td></tr>
+    <tr><td><strong>Campo de entrada</strong></td><td>Barra oscura debajo del display que muestra la expresión actual (números y operadores ingresados). A la derecha incluye un botón de borrado (icono de retroceso).</td></tr>
+</table>
+
+<h3 id="53-teclado-numérico">5.3. Teclado numérico</h3>
+<p>El teclado se organiza en una cuadrícula de botones:</p>
+<table>
+    <tr><th>Fila</th><th>Botones</th></tr>
+    <tr><td>Fila 1</td><td><code>C</code> (Borrar todo), <code>↑n</code>, <code>↓n</code>, <code>÷</code> (dividir), <code>mod</code></td></tr>
+    <tr><td>Fila 2</td><td><code>7</code>, <code>8</code>, <code>9</code>, <code>×</code> (multiplicar), <code>%</code> (porcentaje)</td></tr>
+    <tr><td>Fila 3</td><td><code>4</code>, <code>5</code>, <code>6</code>, <code>−</code> (restar), <code>( )</code> (paréntesis)</td></tr>
+    <tr><td>Fila 4</td><td><code>1</code>, <code>2</code>, <code>3</code>, <code>+</code> (sumar)</td></tr>
+    <tr><td>Fila 5</td><td><code>0</code>, <code>,</code> (coma decimal), <code>x</code> (variable), <code>f(x)</code> (funciones)</td></tr>
+    <tr><td>Columna derecha</td><td><code>=</code> (igual) — botón azul grande que ocupa dos filas de altura.</td></tr>
+</table>
+
+<img src="./recursos/01-teclado-basico.png" alt="Teclado de la calculadora en modo Básico">
+<figcaption>Figura 1: Teclado numérico de la Calculadora de GNOME en modo Básico.</figcaption>
+
+<h2 id="6-procedimiento-realizar-una-suma">6. Procedimiento: realizar una suma</h2>
+<p>A continuación se detalla el procedimiento paso a paso para sumar dos números.</p>
+
+<h3 id="61-abrir-la-calculadora">6.1. Abrir la calculadora</h3>
+<ol>
+    <li>Inicie la aplicación (ver sección 4.1).</li>
+    <li>Verifique que el selector de modo en la barra superior muestre "<strong>Básico</strong>" o "<strong>Bás...</strong>".</li>
+    <li>Confirme que el campo de entrada esté vacío o presione el botón <strong><code>C</code></strong> para reiniciar.</li>
+</ol>
+
+<img src="./recursos/02-display-vacio.png" alt="Calculadora con display vacío">
+<figcaption>Figura 2: Calculadora con el campo de entrada vacío.</figcaption>
+
+<h3 id="62-ingresar-el-primer-número">6.2. Ingresar el primer número</h3>
+<ol>
+    <li>Pulse los botones numéricos correspondientes al primer número que desea sumar.</li>
+    <li>Los dígitos aparecerán en el campo de entrada, de izquierda a derecha.</li>
+</ol>
+<div class="info-box">
+    <strong>Ejemplo:</strong> Para ingresar el número 15, pulse primero <code>1</code> y luego <code>5</code>. El campo de entrada mostrará <strong><code>15</code></strong>.
+</div>
+
+<img src="./recursos/03-primero-numero.png" alt="Campo de entrada mostrando 15">
+<figcaption>Figura 3: Primer número (15) ingresado en el campo de entrada.</figcaption>
+
+<h3 id="63-seleccionar-la-operación-de-suma">6.3. Seleccionar la operación de suma</h3>
+<ol>
+    <li>Pulse el botón <strong><code>+</code></strong> (suma), ubicado en la cuarta fila del teclado, en la columna de operadores (tercera columna desde la derecha).</li>
+    <li>El símbolo <code>+</code> se añadirá al campo de entrada, justo después del primer número.</li>
+</ol>
+<div class="info-box">
+    <strong>Verificación:</strong> El campo de entrada debe mostrar el primer número seguido del símbolo <code>+</code> (ej. <code>15+</code>).
+</div>
+
+<img src="./recursos/04-operacion-suma.png" alt="Operación de suma seleccionada, mostrando 15+">
+<figcaption>Figura 4: Operador de suma seleccionado. El campo muestra <code>15+</code>.</figcaption>
+
+<h3 id="64-ingresar-el-segundo-número">6.4. Ingresar el segundo número</h3>
+<ol>
+    <li>Pulse los botones numéricos correspondientes al segundo número.</li>
+    <li>Los dígitos se añadirán a la expresión en el campo de entrada.</li>
+</ol>
+<div class="info-box">
+    <strong>Ejemplo:</strong> Para sumar 28, pulse <code>2</code> y luego <code>8</code>. El campo de entrada mostrará <strong><code>15+28</code></strong>.
+</div>
+
+<img src="./recursos/05-segundo-numero.png" alt="Expresión completa: 15+28">
+<figcaption>Figura 5: Segundo número (28) ingresado. La expresión completa es <code>15+28</code>.</figcaption>
+
+<h3 id="65-obtener-el-resultados">6.5. Obtener el resultado</h3>
+<ol>
+    <li>Pulse el botón <strong><code>=</code></strong> (igual), el botón azul grande ubicado en la esquina inferior derecha del teclado.</li>
+    <li>El resultado de la operación aparecerá en el <strong>display principal</strong> (zona superior gris).</li>
+    <li>El campo de entrada mostrará el resultado calculado.</li>
+</ol>
+<div class="info-box">
+    <strong>Verificación:</strong> En el ejemplo 15 + 28, el display principal muestra <code>15+28 = 43</code> y el campo de entrada muestra <code>43</code>.
+</div>
+
+<img src="./recursos/06-resultado.png" alt="Resultado: 43">
+<figcaption>Figura 6: Resultado de la operación. El display muestra <code>15+28 = 43</code>.</figcaption>
+
+<h2 id="7-ejemplo-completo">7. Ejemplo completo: 15 + 28 = 43</h2>
+<p>A continuación se resume el flujo completo en una sola tabla:</p>
+
+<table>
+    <tr><th>Paso</th><th>Acción</th><th>Campo de entrada</th><th>Display principal</th></tr>
+    <tr><td>1</td><td>Abrir calculadora</td><td><em>(vacío)</em></td><td><em>(vacío)</em></td></tr>
+    <tr><td>2</td><td>Pulsar <code>1</code></td><td><code>1</code></td><td><em>(vacío)</em></td></tr>
+    <tr><td>3</td><td>Pulsar <code>5</code></td><td><code>15</code></td><td><em>(vacío)</em></td></tr>
+    <tr><td>4</td><td>Pulsar <code>+</code></td><td><code>15+</code></td><td><em>(vacío)</em></td></tr>
+    <tr><td>5</td><td>Pulsar <code>2</code></td><td><code>15+2</code></td><td><em>(vacío)</em></td></tr>
+    <tr><td>6</td><td>Pulsar <code>8</code></td><td><code>15+28</code></td><td><em>(vacío)</em></td></tr>
+    <tr><td>7</td><td>Pulsar <code>=</code></td><td><code>43</code></td><td><code>15+28 = 43</code></td></tr>
+</table>
+
+<h3 id="71-sumas-encadenadas">7.1. Sumas encadenadas</h3>
+<p>La calculadora permite realizar sumas consecutivas sin presionar <code>=</code> intermedios:</p>
+<ol>
+    <li>Ingrese el primer número (ej. <code>10</code>).</li>
+    <li>Pulse <code>+</code>.</li>
+    <li>Ingrese el segundo número (ej. <code>20</code>).</li>
+    <li>Pulse <code>+</code> nuevamente.</li>
+    <li>Ingrese el tercer número (ej. <code>5</code>).</li>
+    <li>Pulse <code>=</code>.</li>
+</ol>
+<p>El resultado será <strong>35</strong>.</p>
+
+<h2 id="8-resolución-de-problemas">8. Resolución de problemas</h2>
+
+<table>
+    <tr><th>Problema</th><th>Causa posible</th><th>Solución</th></tr>
+    <tr><td>La calculadora no se abre</td><td>La aplicación no está instalada o el proceso falló.</td><td>Verifique la instalación con <code>gnome-calculator --version</code> en la terminal.</td></tr>
+    <tr><td>El campo de entrada no muestra los dígitos</td><td>La entrega de interacción no se confirmó.</td><td>Intente hacer clic directamente en los botones numéricos.</td></tr>
+    <tr><td>El resultado no es correcto</td><td>Error de digitación o operador incorrecto.</td><td>Pulse el botón <strong><code>C</code></strong> para reiniciar y repita la operación.</td></tr>
+    <tr><td>No se visualiza el resultado</td><td>El display principal está oculto o la ventana necesita redimensionarse.</td><td>Redimensione la ventana de la calculadora o pulse el botón <strong>Maximizar</strong>.</td></tr>
+    <tr><td>Desea deshacer un error</td><td>Pulsó un dígito u operador incorrecto.</td><td>Use la flecha <strong>Deshacer</strong> en la barra superior para revertir el último paso.</td></tr>
+</table>
+
+<h2 id="9-notas-y-referencias">9. Notas y referencias</h2>
+<ul>
+    <li>Este manual fue elaborado con base en observaciones verificadas directamente sobre la aplicación <strong>GNOME Calculator 50.0</strong> ejecutándose en un entorno Linux con escritorio GNOME.</li>
+    <li>Todos los pasos, nombres de botones y resultados fueron confirmados mediante captura de estado de la interfaz antes y después de cada acción.</li>
+    <li>Las capturas de pantalla se encuentran en la carpeta <code>recursos/</code> junto a este documento.</li>
+    <li>La aplicación es de código abierto y forma parte del proyecto GNOME. Más información en <a href="https://gitlab.gnome.org/GNOME/gnome-calculator" target="_blank" rel="noopener">gitlab.gnome.org/GNOME/gnome-calculator</a>.</li>
+</ul>
+
+<hr>
+<p><em>Fin del documento.</em></p>
+
+</body>
+</html>
